@@ -143,6 +143,33 @@
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     }
 
+    .nav-ctas {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .nav-cta-secondary {
+      padding: 0.75rem 1.5rem;
+      background: var(--color-white);
+      border: 2px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50px;
+      color: var(--color-black);
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 0.875rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s var(--ease-out-expo);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-cta-secondary:hover {
+      border-color: var(--color-black);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
     @media (min-width: 768px) {
       .nav-links {
         display: flex;
@@ -280,6 +307,16 @@
       font-weight: 500;
       line-height: 1.5;
       color: var(--color-gray);
+      margin-bottom: 1rem;
+      max-width: 700px;
+    }
+
+    .hero-early-access {
+      font-family: var(--font-body);
+      font-size: clamp(0.9rem, 2vw, 1.125rem);
+      font-weight: 600;
+      line-height: 1.5;
+      color: var(--color-black);
       margin-bottom: 1.75rem;
       max-width: 700px;
     }
@@ -808,7 +845,10 @@
       <li><a href="#how-it-works">How It Works</a></li>
       <li><a href="#survey">Survey</a></li>
     </ul>
-    <a href="https://forms.gle/ocmBM8NiT5eLuZnQ6" target="_blank" class="nav-cta">Take Survey</a>
+    <div class="nav-ctas">
+      <a href="https://forms.gle/5FoW1vHZpbDNidnm9" target="_blank" class="nav-cta-secondary">Join the Waitlist</a>
+      <a href="https://forms.gle/ocmBM8NiT5eLuZnQ6" target="_blank" class="nav-cta">Take Survey</a>
+    </div>
   </nav>
 
   <!-- Hero Section -->
@@ -826,6 +866,7 @@
           A SIMPLE WAY TO STAY <span class="gradient-text">FOCUSED AND FULL OF ENERGY</span>
         </h1>
         <h3 class="hero-subtitle">While application is being built, please take your time to browse through main features application will have and take a survey to shape its functionality.</h3>
+        <h4 class="hero-early-access">Early joiners will have full access to the platform for free, for good. Limited to 20 spaces only.</h4>
         <div class="hero-description">
           <p>A simple way to stay focused and full of energy while you go about your life.</p>
           <p>We can help you gain that extra quality time where it counts the most – with family and friends; to start a new hobby or take up on old pastime again; help get that promotion; make that business idea you thought of some time ago a reality. We can do this together using our own AI assisted, unique platform.</p>
